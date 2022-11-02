@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+<!-- Modal window -->
+    <form id="modal_window" class="modal">
+        <p class="modal__title"><input class="input__title" name="titleText" type="text" placeholder="Title"></p>
+        <div class="modal__description">
+            <textarea class="textarea" name="descriptionText" placeholder="Description"></textarea>
+        </div>
+        <div class="modal__bootom">
+            <input type='button' class="cancel" value="CANCEL">
+            <input type='submit' class="confirm" value="CONFIRM">
+        </div>
+    </form>
+<!-- Header -->
+    <header class="head">
+        <h1 class="name">Trello</h1>
+        <div class="time"></div>
+    </header>
+<!-- Boards -->
+    <div class="container">
+<!-- Todo -->
+        <div class="todo">
+            <div class="head__board">
+                <p class="title">TODO:</p>
+                <div class="counter">0</div>
+            </div>
+            <div class="board__item">
+                <div class="list">
+                </div>
+            </div>
+            <button class="add__todo">ADD TODO</button>
+        </div>
+<!-- Progress -->
+        <div class="progress">
+            <div class="head__board">
+                <p class="title">IN PROGRESS</p>
+                <div class="counter">0</div>
+            </div>
+            <div class="board__item">
+                <div class="list__progress"></div>
+            </div>
+        </div>
+<!-- Done -->
+        <div class="done">
+            <div class="head__board">
+                <p class="title">DONE</p>
+                <div class="counter">0</div>
+            </div>
+            <div class="board__item">
+                <div class="list__done"></div>
+            </div>
+            <button class="delete__all">DELETE ALL</button>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
